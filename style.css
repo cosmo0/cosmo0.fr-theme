@@ -30,7 +30,7 @@ body:not(.logged-in) {
 
 .main-header-bar::after {
     content: "";
-    background: url(/wp-content/themes/cosmo0/images/banniere-cosmo0.jpg) no-repeat center center;
+    background: url(/wp-content/themes/cosmo0.fr-theme/images/banniere-cosmo0.jpg) no-repeat center center;
     background-size: cover;
     opacity: 0.15;
     top: 0;
@@ -73,8 +73,31 @@ article blockquote.wp-block-quote.is-style-large p {
     font-style: normal;
 }
 
-.captures-link {
+/* sidebar links */
+#secondary .external-links .captures {
     padding-bottom: 1rem;
     margin-bottom: 1rem;
     border-bottom: 1px solid #ccc;
+}
+.external-links a {
+    min-height: 16px;
+    padding-left: 22px;
+}
+.external-links .captures a {
+    background: url(/wp-content/themes/cosmo0.fr-theme/images/video-16.png) no-repeat center left;
+}
+.external-links .nintendo a {
+    background: url(/wp-content/themes/cosmo0.fr-theme/images/nintendo-16.png) no-repeat center left;
+}
+.external-links .xbox a {
+    background: url(/wp-content/themes/cosmo0.fr-theme/images/xbox-16.png) no-repeat center left;
+}
+.external-links .playstation a {
+    background: url(/wp-content/themes/cosmo0.fr-theme/images/playstation-16.png) no-repeat center left;
+}
+.external-links .amazon a {
+    background: url(/wp-content/themes/cosmo0.fr-theme/images/amazon-16.png) no-repeat center left;
+}
+.external-links .fnac a {
+    background: url(/wp-content/themes/cosmo0.fr-theme/images/fnac-16.png) no-repeat center left;
 }

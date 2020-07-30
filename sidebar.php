@@ -31,48 +31,36 @@ echo '<div ';
 		
 		<?php if( is_single() && (get_field('moment_twitter') || get_field('nintendofr') || get_field('amazon') || get_field('fnac')) ): ?>
 			<!-- custom fields -->
-			<aside class="widget">
+			<aside class="widget external-links">
 				<ul>
 					<?php if( get_field('moment_twitter') ): ?>
-					<li class="captures-link">
-						<a href="<?php the_field('moment_twitter'); ?>" target="_blank" rel="nofollow">
-							<img src="/wp-content/themes/cosmo0/images/video-16.png" alt="Video icon" /> Toutes mes captures
-						</a>
+					<li class="captures">
+						<a href="<?php the_field('moment_twitter'); ?>" target="_blank" rel="nofollow">Toutes mes captures</a>
 					</li>
 					<?php endif; ?>
 					<?php if( get_field('nintendofr') ): ?>
-					<li>
-						<a href="<?php the_field('nintendofr'); ?>" target="_blank" rel="nofollow">
-							<img src="/wp-content/themes/cosmo0/images/nintendo-16.png" alt="Nintendo icon" /> Acheter sur Nintendo.fr
-						</a>
+					<li class="nintendo">
+						<a href="<?php the_field('nintendofr'); ?>" target="_blank" rel="nofollow">Acheter sur Nintendo.fr</a>
 					</li>
 					<?php endif; ?>
 					<?php if( get_field('xboxcom') ): ?>
-					<li>
-						<a href="<?php the_field('xboxcom'); ?>" target="_blank" rel="nofollow">
-							<img src="/wp-content/themes/cosmo0/images/xbox-16.png" alt="Xbox icon" /> Acheter sur Xbox.com
-						</a>
+					<li class="xbox">
+						<a href="<?php the_field('xboxcom'); ?>" target="_blank" rel="nofollow">Acheter sur Xbox.com</a>
 					</li>
 					<?php endif; ?>
 					<?php if( get_field('playstationcom') ): ?>
-					<li>
-						<a href="<?php the_field('playstationcom'); ?>" target="_blank" rel="nofollow">
-							<img src="/wp-content/themes/cosmo0/images/playstation-16.png" alt="Playstation icon" /> Acheter sur Playstation.com
-						</a>
+					<li class="playstation">
+						<a href="<?php the_field('playstationcom'); ?>" target="_blank" rel="nofollow">Acheter sur Playstation.com</a>
 					</li>
 					<?php endif; ?>
 					<?php if( get_field('amazon') ): ?>
-					<li>
-						<a href="<?php the_field('amazon'); ?>?tag=cosmo0-21" target="_blank" rel="nofollow">
-							<img src="/wp-content/themes/cosmo0/images/amazon-16.png" alt="Amazon icon" /> Acheter sur Amazon.fr
-						</a>
+					<li class="amazon">
+						<a href="<?php the_field('amazon'); ?>?tag=cosmo0-21" target="_blank" rel="nofollow">Acheter sur Amazon.fr</a>
 					</li>
 					<?php endif; ?>
 					<?php if( get_field('fnac') ): ?>
-					<li>
-						<a href="<?php the_field('fnac'); ?>" target="_blank" rel="nofollow">
-							<img src="/wp-content/themes/cosmo0/images/fnac-16.png" alt="Fnac icon" /> Acheter sur Fnac.com
-						</a>
+					<li class="fnac">
+						<a href="<?php the_field('fnac'); ?>" target="_blank" rel="nofollow">Acheter sur Fnac.com</a>
 					</li>
 					<?php endif; ?>
 				</ul>
