@@ -1,0 +1,80 @@
+/**
+Theme Name: cosmo0
+Author: cosmo0
+Author URI: https://www.cosmo0.fr
+Description: Theme for cosmo0.fr, based on Astra
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: cosmo0
+Template: astra
+*/
+
+/* fix mobile menus */
+body:not(.logged-in) {
+    position: static;
+}
+
+@media screen and (max-width: 782px) {
+    #wp-toolbar>ul>li {
+        display: inline-block;
+        padding: 0 1rem;
+    }
+}
+
+/* header image */
+.main-header-bar {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.main-header-bar::after {
+    content: "";
+    background: url(/wp-content/themes/cosmo0/images/banniere-cosmo0.jpg) no-repeat center center;
+    background-size: cover;
+    opacity: 0.15;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+@media (max-width: 1024px) {
+    .main-header-bar {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .site-branding {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+/* page title */
+.ast-single-post .entry-title {
+    font-size: 2.5rem;
+}
+
+/* review conclusions */
+article blockquote.wp-block-quote.is-style-large {
+    margin-top: 1rem;
+    border: 5px solid rgba(0, 0, 0, 0.04);
+    padding: 1rem;
+}
+
+article blockquote.wp-block-quote.is-style-large p {
+    font-size: 1.2rem;
+    font-style: normal;
+}
+
+.captures-link {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+}
