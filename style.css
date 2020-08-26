@@ -56,6 +56,15 @@ body:not(.logged-in) {
     }
 }
 
+/* sub menu */
+@media (min-width: 769px) {
+    .main-header-menu .sub-menu .menu-item.focus>.sub-menu,
+    .main-header-menu .sub-menu .menu-item:hover>.sub-menu {
+        left: auto;
+        right: 100%;
+    }
+}
+
 /* page title */
 .ast-single-post .entry-title {
     font-size: 2.5rem;
