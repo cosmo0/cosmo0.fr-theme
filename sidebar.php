@@ -33,11 +33,18 @@ echo '<div ';
 			<!-- custom fields -->
 			<aside class="widget external-links">
 				<ul>
+					<?php if( get_field('guide') ): ?>
+					<li class="guide">
+						<a href="<?php the_field('guide'); ?>">Guide et astuces</a>
+					</li>
+					<?php endif; ?>
+
 					<?php if( get_field('moment_twitter') ): ?>
 					<li class="captures">
 						<a href="<?php the_field('moment_twitter'); ?>" target="_blank" rel="nofollow">Toutes mes captures</a>
 					</li>
 					<?php endif; ?>
+
 					<?php if( get_field('nintendofr') ): ?>
 					<li class="nintendo">
 						<a href="<?php the_field('nintendofr'); ?>" target="_blank" rel="nofollow">Acheter sur Nintendo.fr</a>

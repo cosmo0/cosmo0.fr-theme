@@ -74,6 +74,7 @@ article blockquote.wp-block-quote.is-style-large p {
 }
 
 /* sidebar links */
+#secondary .external-links .guide,
 #secondary .external-links .captures {
     padding-bottom: 1rem;
     margin-bottom: 1rem;
@@ -82,6 +83,9 @@ article blockquote.wp-block-quote.is-style-large p {
 .external-links a {
     min-height: 16px;
     padding-left: 22px;
+}
+.external-links .guide a {
+    background: url(/wp-content/themes/cosmo0.fr-theme/images/guide-16.png) no-repeat center left;
 }
 .external-links .captures a {
     background: url(/wp-content/themes/cosmo0.fr-theme/images/video-16.png) no-repeat center left;
