@@ -108,6 +108,12 @@ article blockquote.wp-block-quote.is-style-large p {
 .external-links .playstation a {
     background: url(/wp-content/themes/cosmo0.fr-theme/images/playstation-16.png) no-repeat center left;
 }
+.external-links .steam a {
+    background: url(/wp-content/themes/cosmo0.fr-theme/images/steam-16.png) no-repeat center left;
+}
+.external-links .epic a {
+    background: url(/wp-content/themes/cosmo0.fr-theme/images/epic-16.png) no-repeat center left;
+}
 .external-links .amazon a {
     background: url(/wp-content/themes/cosmo0.fr-theme/images/amazon-16.png) no-repeat center left;
 }

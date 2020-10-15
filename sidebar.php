@@ -60,6 +60,16 @@ echo '<div ';
 						<a href="<?php the_field('playstationcom'); ?>" target="_blank" rel="nofollow">Acheter sur Playstation.com</a>
 					</li>
 					<?php endif; ?>
+					<?php if( get_field('steam') ): ?>
+					<li class="steam">
+						<a href="<?php the_field('steam'); ?>" target="_blank" rel="nofollow">Acheter sur Steam</a>
+					</li>
+					<?php endif; ?>
+					<?php if( get_field('epic') ): ?>
+					<li class="steam">
+						<a href="<?php the_field('epic'); ?>" target="_blank" rel="nofollow">Acheter sur Epic Store</a>
+					</li>
+					<?php endif; ?>
 					<?php if( get_field('amazon') ): ?>
 					<li class="amazon">
 						<a href="<?php the_field('amazon'); ?>?tag=cosmo0-21" target="_blank" rel="nofollow">Acheter sur Amazon.fr</a>
