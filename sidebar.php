@@ -66,13 +66,13 @@ echo '<div ';
 					</li>
 					<?php endif; ?>
 					<?php if( get_field('epic') ): ?>
-					<li class="steam">
+					<li class="epic">
 						<a href="<?php the_field('epic'); ?>" target="_blank" rel="nofollow">Acheter sur Epic Store</a>
 					</li>
 					<?php endif; ?>
 					<?php if( get_field('amazon') ): ?>
 					<li class="amazon">
-						<a href="<?php the_field('amazon'); ?>?tag=cosmo0-21" target="_blank" rel="nofollow">Acheter sur Amazon.fr</a>
+						<a href="<?php the_field('amazon'); ?>" target="_blank" rel="nofollow">Acheter sur Amazon.fr</a>
 					</li>
 					<?php endif; ?>
 					<?php if( get_field('fnac') ): ?>
