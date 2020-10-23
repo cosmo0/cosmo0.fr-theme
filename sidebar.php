@@ -65,6 +65,11 @@ echo '<div ';
 						<a href="<?php the_field('steam'); ?>" target="_blank" rel="nofollow">Acheter sur Steam</a>
 					</li>
 					<?php endif; ?>
+					<?php if( get_field('gog') ): ?>
+					<li class="gog">
+						<a href="<?php the_field('gog'); ?>" target="_blank" rel="nofollow">Acheter sur GOG</a>
+					</li>
+					<?php endif; ?>
 					<?php if( get_field('epic') ): ?>
 					<li class="epic">
 						<a href="<?php the_field('epic'); ?>" target="_blank" rel="nofollow">Acheter sur Epic Store</a>
