@@ -41,48 +41,48 @@ echo '<div ';
 
 					<?php if( get_field('moment_twitter') ): ?>
 					<li class="captures">
-						<a href="<?php the_field('moment_twitter'); ?>" target="_blank" rel="nofollow">Toutes mes captures</a>
+						<a href="<?php the_field('moment_twitter'); ?>" target="_blank" rel="external">Toutes mes captures</a>
 					</li>
 					<?php endif; ?>
 
 					<?php if( get_field('nintendofr') ): ?>
 					<li class="nintendo">
-						<a href="<?php the_field('nintendofr'); ?>" target="_blank" rel="nofollow">Acheter sur Nintendo.fr</a>
+						<a href="<?php the_field('nintendofr'); ?>" target="_blank" rel="external">Acheter sur Nintendo.fr</a>
 					</li>
 					<?php endif; ?>
 					<?php if( get_field('xboxcom') ): ?>
 					<li class="xbox">
-						<a href="<?php the_field('xboxcom'); ?>" target="_blank" rel="nofollow">Acheter sur Xbox.com</a>
+						<a href="<?php the_field('xboxcom'); ?>" target="_blank" rel="external">Acheter sur Xbox.com</a>
 					</li>
 					<?php endif; ?>
 					<?php if( get_field('playstationcom') ): ?>
 					<li class="playstation">
-						<a href="<?php the_field('playstationcom'); ?>" target="_blank" rel="nofollow">Acheter sur Playstation.com</a>
+						<a href="<?php the_field('playstationcom'); ?>" target="_blank" rel="external">Acheter sur Playstation.com</a>
 					</li>
 					<?php endif; ?>
 					<?php if( get_field('steam') ): ?>
 					<li class="steam">
-						<a href="<?php the_field('steam'); ?>" target="_blank" rel="nofollow">Acheter sur Steam</a>
+						<a href="<?php the_field('steam'); ?>" target="_blank" rel="external">Acheter sur Steam</a>
 					</li>
 					<?php endif; ?>
 					<?php if( get_field('gog') ): ?>
 					<li class="gog">
-						<a href="<?php the_field('gog'); ?>" target="_blank" rel="nofollow">Acheter sur GOG</a>
+						<a href="<?php the_field('gog'); ?>" target="_blank" rel="external">Acheter sur GOG</a>
 					</li>
 					<?php endif; ?>
 					<?php if( get_field('epic') ): ?>
 					<li class="epic">
-						<a href="<?php the_field('epic'); ?>" target="_blank" rel="nofollow">Acheter sur Epic Store</a>
+						<a href="<?php the_field('epic'); ?>" target="_blank" rel="external">Acheter sur Epic Store</a>
 					</li>
 					<?php endif; ?>
 					<?php if( get_field('amazon') ): ?>
 					<li class="amazon">
-						<a href="<?php the_field('amazon'); ?>" target="_blank" rel="nofollow">Acheter sur Amazon.fr</a>
+						<a href="<?php the_field('amazon'); ?>" target="_blank" rel="external">Acheter sur Amazon.fr</a>
 					</li>
 					<?php endif; ?>
 					<?php if( get_field('fnac') ): ?>
 					<li class="fnac">
-						<a href="<?php the_field('fnac'); ?>" target="_blank" rel="nofollow">Acheter sur Fnac.com</a>
+						<a href="<?php the_field('fnac'); ?>" target="_blank" rel="external">Acheter sur Fnac.com</a>
 					</li>
 					<?php endif; ?>
 				</ul>
