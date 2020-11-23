@@ -3,7 +3,7 @@ Theme Name: cosmo0
 Author: cosmo0
 Author URI: https://www.cosmo0.fr
 Description: Theme for cosmo0.fr, based on Astra
-Version: 1.4.0
+Version: 1.4.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: cosmo0
@@ -63,7 +63,10 @@ body:not(.logged-in) {
     }
 }
 
-/* sub menu */
+/*
+    Sub menus
+*/
+
 @media (min-width: 769px) {
     .main-header-menu .sub-menu .menu-item.focus>.sub-menu,
     .main-header-menu .sub-menu .menu-item:hover>.sub-menu {
@@ -72,12 +75,24 @@ body:not(.logged-in) {
     }
 }
 
-/* page title */
+.sub-menu .sub-menu {
+    left: auto;
+    right: 100%;
+    top: -200px;
+}
+
+/*
+    Page title
+*/
+
 .ast-single-post .entry-title {
     font-size: 2.5rem;
 }
 
-/* review conclusions */
+/*
+    Review conclusions
+    paper edge effect from https://codepen.io/slimsmearlapp/pen/AyueF
+*/
 
 article blockquote.wp-block-quote.is-large,
 article blockquote.wp-block-quote.is-style-large,
@@ -89,8 +104,6 @@ article blockquote.wp-block-quote {
     box-shadow: 0 0 0.5rem 0 rgba(162, 102, 161, 0.4);
     border: 1px solid #a266a1;
 }
-
-/* paper edge effect from https://codepen.io/slimsmearlapp/pen/AyueF */
 
 article blockquote.wp-block-quote:after {
     content: "";
@@ -123,13 +136,15 @@ article blockquote.wp-block-quote p {
     font-style: normal;
 }
 
-/* sidebar links */
+/*
+    Sidebar links
+    paper effect from https://codepen.io/martinwolf/pen/hxdmv
+*/
 
 .external-links {
     border: 1px solid #a266a1;
     position: relative;
     background: #fff;
-    /* box-shadow: 0 0 0.25rem 0 rgba(162, 102, 161, 0.4); */
 }
 .external-links ul {
     padding: 0.5rem 0;
@@ -137,8 +152,6 @@ article blockquote.wp-block-quote p {
 .external-links li {
     padding-left: 1rem;
 }
-
-/* paper effect from https://codepen.io/martinwolf/pen/hxdmv */
 
 .external-links::before,
 .external-links::after {
@@ -175,7 +188,10 @@ article blockquote.wp-block-quote p {
   right: 5px;
 }
 
-/* external links */
+.external-links a {
+    min-height: 16px;
+    padding-left: 22px;
+}
 
 #secondary .external-links .guide,
 #secondary .external-links .captures {
@@ -184,10 +200,6 @@ article blockquote.wp-block-quote p {
     border-bottom: 1px solid #a266a1;
 }
 
-.external-links a {
-    min-height: 16px;
-    padding-left: 22px;
-}
 .external-links .guide a {
     background: url(/wp-content/themes/cosmo0.fr-theme/images/guide-16.png) no-repeat center left;
 }
@@ -219,26 +231,34 @@ article blockquote.wp-block-quote p {
     background: url(/wp-content/themes/cosmo0.fr-theme/images/fnac-16.png) no-repeat center left;
 }
 
-/* sub sub menu */
-.sub-menu .sub-menu {
-    left: auto;
-    right: 100%;
-    top: -200px;
+/*
+    Tag cloud
+*/
+
+.sidebar-main .widget_tag_cloud .tagcloud a {
+	border: 0;
+	padding: 0;
+	margin: 0.25rem;
+	line-height: 1;
 }
 
-/* videos */
+.sidebar-main .widget_tag_cloud .tagcloud a:hover {
+	background: none;
+	color: #3a3a3a;
+}
+
+/*
+    Videos
+*/
+
 .wp-block-video {
     margin-bottom: 1.6em;
 }
 
-/* images */
-.entry-content > p > img {
-    float: left;
-    margin-right: 1rem;
-    margin-top: 0.6rem;
-}
+/*
+    Image + text
+*/
 
-/* image+text */
 .wp-block-media-text {
     margin-bottom: 1.6rem;
 }
@@ -251,24 +271,4 @@ article blockquote.wp-block-quote p {
 }
 .wp-block-media-text .wp-block-media-text__content p {
     margin-bottom: 1rem;
-}
-
-/* tags in footer */
-.site-footer .widget_tag_cloud .tagcloud {
-    margin-top: 0;
-}
-
-.site-footer .widget_tag_cloud .tagcloud a {
-    font-size: 12px !important;
-    border: 0;
-    padding: 0;
-    margin-bottom: 0;
-    margin-right: 0.25rem;
-    line-height: 1;
-}
-
-.site-footer .widget_tag_cloud .tagcloud a:hover,
-.site-footer .widget_tag_cloud .tagcloud a:focus,
-.site-footer .widget_tag_cloud .tagcloud a.current-item {
-    background-color: transparent;
 }
