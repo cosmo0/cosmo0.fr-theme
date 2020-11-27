@@ -39,7 +39,7 @@ body:not(.logged-in) {
     content: "";
     background: url(/wp-content/themes/cosmo0.fr-theme/images/banniere-cosmo0.jpg) no-repeat center center;
     background-size: cover;
-    opacity: 0.15;
+    opacity: 0.05;
     top: 0;
     left: 0;
     bottom: 0;
@@ -73,6 +73,10 @@ body:not(.logged-in) {
         left: auto;
         right: 100%;
     }
+}
+
+.main-header-menu > .menu-item > .menu-link {
+    font-weight: bold;
 }
 
 .sub-menu .sub-menu {
