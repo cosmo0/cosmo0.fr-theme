@@ -30,3 +30,15 @@ function child_custom_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'child_custom_styles', 15 );
 add_action( 'wp_enqueue_scripts', 'child_custom_scripts' );
+
+/**
+ * Custom RSS feed
+ * www.wpbeginner.com/wp-tutorials/how-to-create-custom-rss-feeds-in-wordpress/
+ */
+add_action( 'init', 'ScoreRSS' );
+function ScoreRSS(){
+   add_feed( 'scorefeed', 'ScoreFeedCallback' );
+}
+function ScoreFeedCallback(){
+    get_template_part( 'rss', 'scorefeed' );
+}
