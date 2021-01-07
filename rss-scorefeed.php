@@ -2,8 +2,12 @@
 /**
  * Template Name: Score RSS Template - Scorefeed
  */
-$postCount = 10; // The number of posts to show in the feed
-$posts = query_posts('showposts=' . $postCount);
+$postCount = 200; // The number of posts to show in the feed
+$posts = query_posts(array(
+        'posts_per_page' => $postCount,
+        'category_and' => array( 2, 3 ), // critique + nintendo-switch
+        'category__not_in' => array( 38 ) // critique express
+));
 header('Content-Type: application/xml; charset='.get_option('blog_charset'), true);
 echo '<?xml version="1.0" encoding="'.get_option('blog_charset').'"?'.'>';
 ?>
@@ -33,9 +37,9 @@ echo '<?xml version="1.0" encoding="'.get_option('blog_charset').'"?'.'>';
                         <guid isPermaLink="false"><?php the_guid(); ?></guid>
                         <description><![CDATA[<?php the_excerpt_rss() ?>]]></description>
                         <content:encoded><![CDATA[<?php the_excerpt_rss() ?>]]></content:encoded>
-                        <note max="5"><?php the_field('note', get_the_ID()); ?></note>
+                        <note max="10"><?php the_field('note', get_the_ID()); ?></note>
                         <?php do_action('rss2_item'); ?>
                 </item>
-        <?php endwhile; ?>
+        <?php endwhile; wp_reset_postdata(); ?>
 </channel>
 </rss>
