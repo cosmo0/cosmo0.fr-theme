@@ -5,7 +5,7 @@
 $postCount = 200; // The number of posts to show in the feed
 $posts = query_posts(array(
         'posts_per_page' => $postCount,
-        'category_and' => array( 2, 3 ), // critique + nintendo-switch
+        'category__and' => array( 2, 3 ), // critique + nintendo-switch
         'category__not_in' => array( 38 ) // critique express
 ));
 header('Content-Type: application/xml; charset='.get_option('blog_charset'), true);
