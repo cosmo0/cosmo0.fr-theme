@@ -236,6 +236,13 @@ article blockquote.wp-block-quote p {
 }
 
 /*
+    Find me on
+*/
+.widget .textwidget ul li a img {
+    margin-top: -3px;
+}
+
+/*
     Tag cloud
 */
 
