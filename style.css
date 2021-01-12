@@ -3,7 +3,7 @@ Theme Name: cosmo0
 Author: cosmo0
 Author URI: https://www.cosmo0.fr
 Description: Theme for cosmo0.fr, based on Astra
-Version: 1.4.1
+Version: 1.5.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: cosmo0
@@ -24,6 +24,7 @@ body:not(.logged-in) {
     #wpadminbar #wp-admin-bar-wpseo-menu,
     #wpadminbar #wp-admin-bar-stats,
     #wpadminbar #wp-admin-bar-disqus,
+    #wpadminbar #wp-admin-bar-notes,
     #wpadminbar .ab-top-secondary {
         display: none;
     }
@@ -55,16 +56,37 @@ body:not(.logged-in) {
     }
 }
 
-@media (max-width: 769px) {
-    .site-branding {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+/*
+    Logo
+*/
+
+.site-branding .site-title a {
+    display: block;
+    text-indent: -1000px;
+    overflow: hidden;
+    background: url(/wp-content/themes/cosmo0.fr-theme/images/logo.png) no-repeat top left;
+    width: 430px;
+    height: 110px;
+}
+.site-branding .site-description {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .site-branding .site-title a {
+        display: inline;
+        width: auto;
+        height: auto;
+        text-indent: 0;
+        background: none;
+    }
+    .site-branding .site-description {
+        display: block;
     }
 }
 
 /*
-    Sub menus
+    Dropdown menus
 */
 
 @media (min-width: 769px) {
@@ -243,6 +265,13 @@ article blockquote.wp-block-quote p {
 }
 
 /*
+    Categories
+*/
+.widget_categories .current-cat > a {
+    font-weight: bold;
+}
+
+/*
     Tag cloud
 */
 
@@ -253,9 +282,16 @@ article blockquote.wp-block-quote p {
 	line-height: 1;
 }
 
-.sidebar-main .widget_tag_cloud .tagcloud a:hover {
+.sidebar-main .widget_tag_cloud .tagcloud a:hover,
+.sidebar-main .widget_tag_cloud .tagcloud a:focus {
 	background: none;
-	color: #3a3a3a;
+    color: #3a3a3a;
+}
+
+.sidebar-main .widget_tag_cloud .tagcloud a.current-item {
+	background: none;
+    color: #0274be;
+    font-weight: bold;
 }
 
 /*
