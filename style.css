@@ -232,6 +232,7 @@ article blockquote.wp-block-quote p {
 .external-links .captures a {
     background: url(/wp-content/themes/cosmo0.fr-theme/images/video-16.png) no-repeat center left;
 }
+
 .external-links .nintendo a {
     background: url(/wp-content/themes/cosmo0.fr-theme/images/nintendo-16.png) no-repeat center left;
 }
@@ -241,6 +242,7 @@ article blockquote.wp-block-quote p {
 .external-links .playstation a {
     background: url(/wp-content/themes/cosmo0.fr-theme/images/playstation-16.png) no-repeat center left;
 }
+
 .external-links .steam a {
     background: url(/wp-content/themes/cosmo0.fr-theme/images/steam-16.png) no-repeat center left;
 }
@@ -250,6 +252,14 @@ article blockquote.wp-block-quote p {
 .external-links .gog a {
     background: url(/wp-content/themes/cosmo0.fr-theme/images/gog-16.png) no-repeat center left;
 }
+
+.external-links .android a {
+    background: url(/wp-content/themes/cosmo0.fr-theme/images/android-16.png) no-repeat center left;
+}
+.external-links .ios a {
+    background: url(/wp-content/themes/cosmo0.fr-theme/images/ios-16.png) no-repeat center left;
+}
+
 .external-links .amazon a {
     background: url(/wp-content/themes/cosmo0.fr-theme/images/amazon-16.png) no-repeat center left;
 }

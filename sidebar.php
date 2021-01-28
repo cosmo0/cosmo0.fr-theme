@@ -45,6 +45,7 @@ echo '<div ';
 					</li>
 					<?php endif; ?>
 
+					<!-- consoles -->
 					<?php if( get_field('nintendofr') ): ?>
 					<li class="nintendo">
 						<a href="<?php the_field('nintendofr'); ?>" target="_blank" rel="external">Acheter sur Nintendo.fr</a>
@@ -60,6 +61,8 @@ echo '<div ';
 						<a href="<?php the_field('playstationcom'); ?>" target="_blank" rel="external">Acheter sur Playstation.com</a>
 					</li>
 					<?php endif; ?>
+
+					<!-- PC -->
 					<?php if( get_field('steam') ): ?>
 					<li class="steam">
 						<a href="<?php the_field('steam'); ?>" target="_blank" rel="external">Acheter sur Steam</a>
@@ -75,6 +78,20 @@ echo '<div ';
 						<a href="<?php the_field('epic'); ?>" target="_blank" rel="external">Acheter sur Epic Store</a>
 					</li>
 					<?php endif; ?>
+
+					<!-- PC -->
+					<?php if( get_field('android') ): ?>
+					<li class="android">
+						<a href="<?php the_field('android'); ?>" target="_blank" rel="external">Acheter sur Android</a>
+					</li>
+					<?php endif; ?>
+					<?php if( get_field('ios') ): ?>
+					<li class="ios">
+						<a href="<?php the_field('ios'); ?>" target="_blank" rel="external">Acheter sur iPhone</a>
+					</li>
+					<?php endif; ?>
+					
+					<!-- stores -->
 					<?php if( get_field('amazon') ): ?>
 					<li class="amazon">
 						<a href="<?php the_field('amazon'); ?>" target="_blank" rel="external">Acheter sur Amazon.fr</a>
