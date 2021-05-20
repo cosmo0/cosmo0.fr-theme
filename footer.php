@@ -37,7 +37,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<script type="text/javascript">
 		const players = Plyr.setup('video', {
-			controls: ['play-large', 'play', 'progress', 'current-time', 'mute', 'volume', 'fullscreen'],
+			controls: ['play-large', 'play', 'progress', 'current-time', 'mute', 'volume', 'fullscreen', 'download'],
 			disableContextMenu: false
 		});
 	</script>
