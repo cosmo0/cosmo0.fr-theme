@@ -78,6 +78,11 @@ echo '<div ';
 						<a href="<?php the_field('epic'); ?>" target="_blank" rel="external">Acheter sur Epic Store</a>
 					</li>
 					<?php endif; ?>
+					<?php if( get_field('itchio') ): ?>
+					<li class="itchio">
+						<a href="<?php the_field('itchio'); ?>" target="_blank" rel="external">Acheter sur Itch.io</a>
+					</li>
+					<?php endif; ?>
 
 					<!-- PC -->
 					<?php if( get_field('android') ): ?>

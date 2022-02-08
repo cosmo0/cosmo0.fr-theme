@@ -252,6 +252,9 @@ article blockquote.wp-block-quote p {
 .external-links .gog a {
     background: url(/wp-content/themes/cosmo0.fr-theme/images/gog-16.png) no-repeat center left;
 }
+.external-links .itchio a {
+    background: url(/wp-content/themes/cosmo0.fr-theme/images/itchio-16.png) no-repeat center left;
+}
 
 .external-links .android a {
     background: url(/wp-content/themes/cosmo0.fr-theme/images/android-16.png) no-repeat center left;
