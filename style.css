@@ -10,6 +10,23 @@ Text Domain: cosmo0
 Template: astra
 */
 
+/* fix new links style */
+.site-title a,
+.entry-header h2 a,
+.entry-meta a,
+.read-more a,
+.breadcrumbs a,
+.custom-html-widget a,
+.widget_categories a,
+.widget_tag_cloud a,
+.widget_meta a,
+.pagination a,
+.navigation a,
+.search-custom-menu-item a,
+.comment-form a {
+	text-decoration: none;
+}
+
 /* fix mobile menus */
 body:not(.logged-in) {
     position: static;
