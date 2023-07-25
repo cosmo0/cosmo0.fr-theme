@@ -84,7 +84,7 @@ echo '<div ';
 					</li>
 					<?php endif; ?>
 
-					<!-- PC -->
+					<!-- Mobile -->
 					<?php if( get_field('android') ): ?>
 					<li class="android">
 						<a href="<?php the_field('android'); ?>" target="_blank" rel="external">Acheter sur Android</a>
@@ -96,7 +96,7 @@ echo '<div ';
 					</li>
 					<?php endif; ?>
 					
-					<!-- stores -->
+					<!-- amazon/fnac -->
 					<?php if( get_field('amazon') ): ?>
 					<li class="amazon">
 						<a href="<?php the_field('amazon'); ?>" target="_blank" rel="external">Acheter sur Amazon.fr</a>
@@ -105,6 +105,13 @@ echo '<div ';
 					<?php if( get_field('fnac') ): ?>
 					<li class="fnac">
 						<a href="<?php the_field('fnac'); ?>" target="_blank" rel="external">Acheter sur Fnac.com</a>
+					</li>
+					<?php endif; ?>
+					
+					<!-- OST -->
+					<?php if( get_field('ost') ): ?>
+					<li class="ost">
+						<a href="<?php the_field('ost'); ?>" target="_blank" rel="external">Acheter la bande son</a>
 					</li>
 					<?php endif; ?>
 				</ul>
