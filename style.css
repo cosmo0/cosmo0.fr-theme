@@ -135,7 +135,7 @@ body:not(.logged-in) {
 /*
 	Fix left menus
 */
-.widget-area .secondary .widget ul {
+.sidebar-main .widget ul {
 	list-style-type: none;
 }
 
