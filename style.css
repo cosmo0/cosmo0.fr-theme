@@ -3,7 +3,7 @@ Theme Name: cosmo0
 Author: cosmo0
 Author URI: https://www.cosmo0.fr
 Description: Theme for cosmo0.fr, based on Astra
-Version: 1.6.0
+Version: 1.6.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: cosmo0
@@ -130,6 +130,13 @@ body:not(.logged-in) {
 
 .ast-single-post .entry-title {
     font-size: 2.5rem;
+}
+
+/*
+	Fix left menus
+*/
+.widget-area .secondary .widget ul {
+	list-style-type: none;
 }
 
 /*
