@@ -39,12 +39,6 @@ echo '<div ';
 					</li>
 					<?php endif; ?>
 
-					<?php if( get_field('moment_twitter') ): ?>
-					<li class="captures">
-						<a href="<?php the_field('moment_twitter'); ?>" target="_blank" rel="external">Toutes mes captures</a>
-					</li>
-					<?php endif; ?>
-
 					<!-- consoles -->
 					<?php if( get_field('nintendofr') ): ?>
 					<li class="nintendo">
